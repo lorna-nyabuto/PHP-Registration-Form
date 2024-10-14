@@ -1,12 +1,13 @@
 <?php
 
-$db_host = "mysql";
-$db_name = "db";
-$db_user = "root";
-$db_pass = "pass";
+$servername = "localhost"; // If running locally
+$username = "root"; // Root user for MariaDB
+$password = "coldplay77$"; // Replace with your MariaDB root password
+$dbname = "GROUP7"; // The database you created
 
 
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
